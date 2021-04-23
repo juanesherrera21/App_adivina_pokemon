@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MainActivity</string>
+    <string name="toast_attempt_left">Tiene %d intentos</string>
+    <string name="is_not_pokemon">No es el pokemon</string>
+    <string name="generating_message">Generando en %d</string>
+    <string name="quien_es_ese_pokemon">¿Quien es ese pokemon?</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="vista_de_pokemon">Vista de pokemon</string>
+    <string name="volver">Volver</string>
+    <string name="dan_ellis">Dan ellis</string>
+    <string name="juan_herrera">JUAN HERRERA</string>
+    <string name="aplicacion_desarrollada_para_la_materia_aplicaciones_moviles_nos_divertimos_mucho_haciendola_disfrutenla_xd">Aplicacion desarrollada para la materia aplicaciones moviles, nos divertimos mucho haciendola disfrutenla XD</string>
+    <string name="todo">TODO</string>
 </resources>

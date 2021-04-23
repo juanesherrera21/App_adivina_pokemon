@@ -6,42 +6,77 @@
     android:layout_height="match_parent"
     android:background="@drawable/af542d89a7722b3ba7d078247d3314fe">
 
-    <LinearLayout
-        android:layout_width="403dp"
-        android:layout_height="161dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="566dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-150dp">
 
-        <EditText
-            android:id="@+id/txtpokemon"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:ems="10"
-            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/txtintentos"
+            android:layout_width="351dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/quien_es_ese_pokemon"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textColorHint="#252323"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.383"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.253" />
 
-        <Button
-            android:id="@+id/btnaceptar"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Aceptar" />
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="337dp"
+            android:layout_height="381dp"
+            android:layout_marginTop="228dp"
+            android:contentDescription="@string/vista_de_pokemon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/txtintentos"
-        android:layout_width="6dp"
-        android:layout_height="16dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="48dp" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="371dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="337dp"
-        android:layout_height="381dp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="145dp"
-        tools:srcCompat="@tools:sample/avatars" />
+            <EditText
+                android:id="@+id/txtpokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#201F1F" />
+
+            <Button
+                android:id="@+id/btnaceptar"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/aceptar" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
