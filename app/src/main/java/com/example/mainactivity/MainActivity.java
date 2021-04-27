@@ -9,7 +9,7 @@ import android.view.Window;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button jugar;
+    private Button jugar,creditos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         jugar = (Button) findViewById(R.id.btnjugar);
+        creditos=(Button)findViewById(R.id.button2);
         jugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
+        });
+        creditos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nuevoform = new Intent(MainActivity.this, creditos.class);
+                startActivity(nuevoform);
+            }
         });
     }
 }

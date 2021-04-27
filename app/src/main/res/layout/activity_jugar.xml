@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/af542d89a7722b3ba7d078247d3314fe">
+    android:background="@drawable/aa34e1c76a6569a36499ae86098759ee">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="403dp"
         android:layout_height="161dp"
+        android:layout_marginBottom="72dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="566dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="4dp">
 
         <EditText
             android:id="@+id/txtpokemon"
@@ -20,7 +22,8 @@
             android:layout_weight="1"
             android:background="#FFFFFF"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#201F1F" />
 
         <Button
             android:id="@+id/btnaceptar"
@@ -28,20 +31,53 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Aceptar" />
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/txtintentos"
-        android:layout_width="6dp"
-        android:layout_height="16dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="48dp" />
+        android:layout_width="351dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="¿Quien es ese pokemon?"
+        android:textColor="@color/white"
+        android:textColorHint="#252323"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="337dp"
         android:layout_height="381dp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="145dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/lblcuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
